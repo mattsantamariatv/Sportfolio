@@ -1,0 +1,10 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sat Jun 29 10:31:43 2019
+
+@author: Kartik
+"""
+
+import urllib.request 
+
+urllib.request.urlretrieve('http://projects.fivethirtyeight.com/mlb-api/mlb_elo_latest.csv', "file.csv")
