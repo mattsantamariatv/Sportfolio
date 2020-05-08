@@ -25,6 +25,8 @@ with the destination you wish to get your output in
 1. modify the line: urllib.request.urlretrieve('http://projects.fivethirtyeight.com/mlb-api/mlb_elo_latest.csv', "file.csv")
 with the destination you wish to get your output in
 
+
+
 ##### possible errors in the python scripts:
 
 "module not found" error: install the respective module in your computer
