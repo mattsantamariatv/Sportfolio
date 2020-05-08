@@ -1,0 +1,1 @@
+C:\\Users\\Kartik\\Anaconda3\\python.exe C:\Users\Kartik\Scraping_Project\scripts\xbet_scrape.py %*
