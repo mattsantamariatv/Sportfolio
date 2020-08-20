@@ -32,4 +32,4 @@ for i in range(0, len(data)):
     
     odds = odds.append({'team1' : team1, 'team2' : team2, 'team1_runline' : team1_runline, 'team2_runline' : team2_runline, 'team1_win' : team1_win, 'team2_win' : team2_win, 'team1_total' : team1_total, 'team2_total' : team2_total}, ignore_index = True)    
     
-odds.to_csv('mlb_daily_bovada.csv')
+odds.to_csv('/Users/mattsantamaria/Desktop/Sportfolio/mlb_daily_bovada.csv')
