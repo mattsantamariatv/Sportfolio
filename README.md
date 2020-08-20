@@ -7,15 +7,12 @@
 
 ### xbet
 
-1. edit the file xbet_scrape
-2. modify the line:fname = r"C:\Users\Kartik\Scraping_Project\results" + "\odds_xbet_" + str(today) + ".csv"
-with the destination you wish to get your output in
+1. run the file xbet_scrape.py
 
 ### mlb elo
 
 1. modify the line: urllib.request.urlretrieve('http://projects.fivethirtyeight.com/mlb-api/mlb_elo_latest.csv', "file.csv")
 with the destination you wish to get your output in
-
 
 
 ##### possible errors in the python scripts:
