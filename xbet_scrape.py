@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Sat Jun  1 09:41:38 2019
-
-@author: Kartik
+XBet MLB Scrape
 """
 import requests
 from bs4 import BeautifulSoup
@@ -10,7 +8,7 @@ import pandas as pd
 from datetime import date
 import os
 
-os.chdir(r"/Users/mattsantamaria/Desktop/Sportfolio")
+os.chdir(r"/Users/mattsantamaria/Desktop/Sportfolio" + "/mlb_daily_xbet_" + str(today) + ".csv")
 
 today = date.today()
 
@@ -63,6 +61,6 @@ odds[['to1', 'to2']] = odds.to.str.split("|", expand = True)
 
 odds = odds.drop(['team', 'sp', 'ml', 'to', 'league'], axis = 1)
 
-fname = r"C:\Users\Kartik\Scraping_Project\results" + "\odds_xbet_" + str(today) + ".csv"
+fname = r"/Users/mattsantamaria/Desktop/Sportfolio" + "/mlb_daily_xbet_" + str(today) + ".csv"
 
 odds.to_csv(fname)
