@@ -56,12 +56,12 @@ async function run() {
   
   const jsonContent = JSON.stringify(teamNameHandle);
 
-  fs.writeFile("output/result.json", jsonContent, 'utf8', function (err) {
+  fs.writeFile("/Users/mattsantamaria/Desktop/Sportfolio/result.json", jsonContent, 'utf8', function (err) {
     if (err) {
         console.log("An error occured while writing result to File.");
         return console.log(err);
     }
-    console.log('result written to output/result.json');
+    console.log('The result was written successfully.');
   });
 
   await browser.close();
