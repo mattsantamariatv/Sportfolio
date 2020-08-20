@@ -3,7 +3,7 @@
 ### bovada
 
 1. run bovada_script.js - A json file gets created as the output
-2. run bovada.lv_json_to_excel.py - A converted csv file gets created for the scraped data
+2. run bovada_csv_conversion.py - A converted csv file gets created for the scraped data
 
 ### xbet
 
