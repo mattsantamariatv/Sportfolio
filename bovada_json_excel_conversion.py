@@ -1,14 +1,15 @@
 # -*- coding: utf-8 -*-
 """
-Created on Sun Jun  2 13:05:22 2019
-
-@author: Kartik
+JSON to excel file conversion
 """
+
+#json is python's built-in package for working with JSON data.
+#pandas is a popular Python-based data analysis toolkit 
 
 import json
 import pandas as pd
 
-with open('E:/puppeter/output/result.json') as json_file:  
+with open('/Users/mattsantamaria/Desktop/Sportfolio/result.json') as json_file:  
     data = json.load(json_file)
 
 odds = pd.DataFrame(columns = ['team1', 'team2', 'team1_runline', 'team2_runline', 'team1_win', 'team2_win', 'team1_total', 'team2_total'])
@@ -31,4 +32,4 @@ for i in range(0, len(data)):
     
     odds = odds.append({'team1' : team1, 'team2' : team2, 'team1_runline' : team1_runline, 'team2_runline' : team2_runline, 'team1_win' : team1_win, 'team2_win' : team2_win, 'team1_total' : team1_total, 'team2_total' : team2_total}, ignore_index = True)    
     
-odds.to_csv('odds_bovada.lv.csv')
+odds.to_csv('mlb_daily_bovada.csv')
