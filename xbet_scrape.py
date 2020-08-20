@@ -10,7 +10,7 @@ import pandas as pd
 from datetime import date
 import os
 
-os.chdir(r"C:\Users\Kartik\Scraping_Project\results")
+os.chdir(r"/Users/mattsantamaria/Desktop/Sportfolio")
 
 today = date.today()
 
