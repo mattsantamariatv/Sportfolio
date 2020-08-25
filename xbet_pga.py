@@ -72,6 +72,6 @@ soup = BeautifulSoup(r.content, 'html.parser')
 
 #odds = odds.drop(['team', 'sp', 'ml', 'to', 'league'], axis = 1)
 
-fname = r"/Users/mattsantamaria/Desktop/Sportfolio" + "/mlb_daily_xbet_" + str(today) + ".csv"
+#fname = r"/Users/mattsantamaria/Desktop/Sportfolio" + "/mlb_daily_xbet_" + str(today) + ".csv"
 
-odds.to_csv(fname)
+#odds.to_csv(fname)
