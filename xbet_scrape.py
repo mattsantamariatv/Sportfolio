@@ -2,13 +2,23 @@
 """
 XBet MLB Scrape
 """
+# The requests module allows you to send HTTP requests using Python
+# Beautiful Soup is a Python library for pulling data out of HTML and XML files
+# pandas is a software library written for the Python programming language for data manipulation and analysis
+# A date in Python is not a data type of its own, but we can import a module named datetime to work with dates as date objects
+# The OS module in python provides functions for interacting with the operating system
+
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 from datetime import date
 import os
 
+#chdir() changes the current working directory to the given path
+
 os.chdir(r"/Users/mattsantamaria/Desktop/Sportfolio" + "/mlb_daily_xbet_" + str(today) + ".csv")
+
+#current local time
 
 today = date.today()
 
